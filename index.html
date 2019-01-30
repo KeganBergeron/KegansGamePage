@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+		<title>Kegan's Game Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="background">
+		 <div class="container" class="text-center">
+            <div class="jumbotron"><center><h1>Kegan's Game Page</h1></center>
+            <center><h4>Here are some of my games</h4></center>
+            </div>
+            <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Kegan's Game Page</a>
+            </div>
+        
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="history.html">Hisotry</a></li>
+                </ul>
+        </nav>
+       </div>
+       <div class"container-fluid">
+           <div class="row">
+               <div class="col-lg-6">
+                   <center><h1>RPS Game</h1></center>
+                   <p><center>The RPS Game being rock, paper, scissors is a classic game that requires no skill and only your mind. The point of the game is to be able to crush your opponent by choosing the formation of your hands counter to the formation of the other players hands. How to Play: Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. Same applies to the game below try and choose what you think will prevail in the ruthless battle of rock paper scissors. Thanks for taking the time out of your day to read this paragraph that really has no value what so ever to the page besides learning how to play the game. This paragraph is only here to make the page look a lot more interesting than it already is.</center></p>
+                   <label>Type rock, paper or scissors and click to play </label><input id ='userInput'><br>
+                   <center><a href="#" class="btn btn-primary btn-md" onclick = "playRPS()">Clcik To Play</a></center>
+                   <p id = 'newInput'></p> 
+                   <p id = 'computerInput'></p>
+                   <p id = 'compInput'></p>
+               </div>
+               <div class="col-lg-6">
+               <center><h1>Dice Game</h1></center>
+               <p><center>This dice game is the equvilent to underage gambling take your chancing to role higher than your friend with the Dice Game. Play to compete with your friends to get the highest and bet money so it's actually fun and exhilerating. remeber this paragraph has no value it's just here to make the site more interesting than it already is (not)... thanks again for reading this stupid paragraph that really has no value it's just here to make it look long and interesting. Thanks for taking the time out of your day to read this paragraph that really has no value what so ever to the page besides learning how to play the game. This paragraph is only here to make the page look a lot more interesting than it already is.</cener></p>
+               <a href="#" class="btn btn-primary btn-md" onclick = "diceRoll()">Clcik To Play </a> <br>
+               <p id ='diceOutput'></p>
+               </div>
+           </div>
+       </div>
+       <script src ='Dice.js'></script>
+       <script src ='rps.js'></script>
+	</body>
+</html>
